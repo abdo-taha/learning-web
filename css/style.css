@@ -1,0 +1,105 @@
+*
+{
+    box-sizing:border-box;
+}
+body
+{
+    background-color:#f1f1f1;
+    margin:0;
+}
+.header
+{
+    background-color:tomato;
+    padding:5px;
+    
+    color:white;
+}
+.topnav{
+    background-color:#606060;
+    overflow:hidden;
+    position:sticky;
+    top:0;
+}
+.topnav a
+{
+    display:block;
+    float:left;
+    padding:12px 14px;
+    text-decoration:none;
+    color:white;
+    text-align:center;
+}
+.topnav a:hover
+{
+    background-color:tomato;
+    color:darkseagreen;
+}
+
+.row::after
+{
+    content:"";
+    display:table;
+    clear:both;
+}
+.column
+{
+    display:block;
+    float:left;
+    width:80%;
+    text-align:center;
+    padding:15px;
+
+}
+.column_left {
+    
+    width: 20%;
+    padding:0px;
+   
+}
+
+.footer {
+    background-color: #555;
+    text-align: center;
+    padding: 15px;
+}
+.post
+{
+    background-color:tomato;
+    padding:10px;
+    margin:20px;
+    margin-left:5px;
+    
+}
+table
+{
+    width:100%;
+}
+table,td,th
+{
+    border:1px solid ;
+    border-collapse:collapse;
+    
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    
+}
