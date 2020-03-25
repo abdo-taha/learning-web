@@ -10,6 +10,9 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
+        *{
+            box-sizing:border-box;
+        }
         .bg-light {
             background-color: #220a2dc7 !important;
         }
@@ -59,6 +62,10 @@
         .dropdown-menu  >a:hover {
             background-color: #7741a9ad
         }
+        .navbar-light .navbar-toggler-icon {
+            border-color: rgb(60, 217, 196);
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke=' rgba(60,217,217, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+         }
         
         @media (min-width: 576px) {
         .form-inline .form-control {
@@ -94,6 +101,28 @@
             }
             
         }
+
+        #myCarousel2 .carousel-indicators li {
+            text-indent: 0;
+            width: 5em;
+            height: 5em;
+            opacity: 0.6;
+            border: 3px solid #41dec9;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 1em;
+        }
+        #myCarousel2 .carousel-indicators .active{
+            opacity:1;
+        }
+        #myCarousel2 .carousel-indicators {
+            position:static;
+            width:100%;
+            margin-left:auto;
+            padding-top:20px;
+}
+        }
+
 
         
         
@@ -187,11 +216,11 @@
             </div>
 
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -215,7 +244,7 @@
                     <i class="fas fa-cat" style="font-size:2em; color:#220a2dc7"></i>
                     <p>
                         <br />
-                        you need a cat ? <br /> here you can buy different and special cat all over the world
+                        you need a cat ? <br /> here you can buy different and special cats all over the world
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-12 mr-sm ">
@@ -245,6 +274,83 @@
 
     </section>
 
+
+
+    <section>
+
+        <div class="text-center container">
+            <h2 class="h1 lead " style="color:#41dec9"> Recently Added </h2>
+
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active lead">
+                        <h2>Abyssinian Cat</h2>
+                        <br />
+                        <p>
+                            Abyssinians are highly intelligent and intensely inquisitive. They love to investigate and will leave no nook or cranny unexplored. They’re sometimes referred to as “Aby-grabbys” because they tend to take things that grab their interest. The playful Aby loves to jump and climb. Keep a variety of toys on hand to keep her occupied, including puzzle toys that challenge her intelligence.
+                            <br />
+                        </p>
+                    </div>
+                    <div class="carousel-item lead">
+                        <h2>American Bobtail Cat </h2>
+                        <p>
+                            Confident and friendly, the American Bobtail is a highly intelligent breed with a clownlike personality. Looking much like a bobtailed wildcat, this rare and athletic breed can be taught to walk on a leash. The American Bobtail has two coat varieties, shorthair and longhair, and does not reach adulthood until 2 or 3 years old. A devoted family companion, this cat interacts well with people of all ages and is ideal with children.
+                        </p>
+                    </div>
+                    <div class="carousel-item lead">
+                        <h2>
+                            American Curl Cat
+                        </h2>
+                        <p>
+                            The American Curl has distinctive curled ears that form a graceful arc, giving an alert, perky expression. This breed is known as the “Peter Pan” of cats due to retaining its kittenlike personality throughout life. The Curl has two coat varieties, shorthair and longhair. With her outstanding temperament, the Curl is a people-oriented breed that makes an affectionate soul mate and easily adjusts to other pets and children.
+                        </p>
+                    </div>
+                    <div class="carousel-item lead">
+                        <h2>
+                            Balinese-Javanese Cat
+                        </h2>
+                        <p>
+                            A Siamese in every nature except for her long, silky ermine coat, the Balinese, also known as the Javanese, has a distinctive luxurious tail plume. This long, slender cat is lithe but muscular. An easygoing breed with a clownlike personality, the Balinese adores people. This regal, aristocratic, intelligent cat is talkative, though less vocal than the Siamese. A healthy breed, the Balinese can live up to 20 years.
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>
+                            Chartreux Cat
+                        </h2>
+                        <br />
+                        <p>
+                            Often called the smiling cat of France, the Chartreux has a sweet, smiling expression. This sturdy, powerful cat has a distinctive blue coat with a resilient wooly undercoat. Historically known as fine mousers with strong hunting instincts, the Chartreux enjoys toys that move. This is a slow-maturing breed that reaches adulthood in three to five years. A loving, gentle companion, the Chartreux forms a close bond with her family.
+                        </p>
+                        <br />
+                    </div>
+
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel2" data-slide-to="0" class="active">
+                        <img src="img/symb/1.jpg" width="74" height="74" />
+                    </li>
+                    <li data-target="#myCarousel2" data-slide-to="1">
+                        <img src="img/symb/2.jpg" width="74" height="74" />
+                    </li>
+                    <li data-target="#myCarousel2" data-slide-to="2">
+                        <img src="img/symb/3.jpg" width="74" height="74" />
+                    </li>
+                    <li data-target="#myCarousel2" data-slide-to="3">
+                        <img src="img/symb/4.jpg" width="74" height="74" />
+                    </li>
+                    <li data-target="#myCarousel2" data-slide-to="4">
+                        <img src="img/symb/5.jpg" width="74" height="74" />
+                    </li>
+                </ol>
+
+            </div>
+
+
+        </div>
+        
+    </section>
 
 
 
