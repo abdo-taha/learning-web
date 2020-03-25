@@ -141,6 +141,45 @@
         }
             
         }
+        .check{
+            background:url(img/cover.jpg) no-repeat bottom center fixed;
+            min-height:25em;
+        }
+        .check .blk{
+            background:rgba(20,20,20,0.5);
+        }
+        .rndimg{
+            width:8em;
+            height:8em;
+            border-radius:50%;
+        }
+        .blk ul {
+            list-style:none;
+            color:white;
+            font-size:110%;
+            line-height:2em;
+            font-weight:bold;
+            padding:0.5rem;
+            
+            
+        }
+        .blk .lead {
+            background:rgba(10, 10, 10, 0.38);
+           
+            margin:2em;
+            margin-top:0.5rem;
+            padding-top:2em;
+            padding-bottom:2em;
+        }
+        .blk .btn{
+            width:6em;
+        }
+        @media(max-width:768px){
+            #bla .h1{
+                min-height:7em;
+            }
+            
+        }
 
         
 
@@ -152,7 +191,7 @@
 
     </style>
 </head>
-<body style="height:2000px;">
+<body style="height:3000px;">
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 
@@ -257,7 +296,7 @@
 
     <section class="text-center serves">
         <div class="container">
-            <h2 class="h1" > Here you can </h2>
+            <h2 class="h1"> Here you can </h2>
             <div class="row">
 
                 <div class="col-lg-4 col-md-12 mr-sm">
@@ -282,8 +321,8 @@
                     <h3>food</h3>
                     <i class="fas fa-utensils " style="font-size:2em; color:#220a2dc7"></i>
                     <p>
-                    <br />
-                        for you cat of course ;)
+                        <br />
+                        for your cat of course ;)
                     </p>
                 </div>
 
@@ -350,19 +389,19 @@
                 </div>
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel2" data-slide-to="0" class="active">
-                        <img class="sym" src="img/symb/1.jpg"  />
+                        <img class="sym" src="img/symb/1.jpg" />
                     </li>
                     <li data-target="#myCarousel2" data-slide-to="1">
-                        <img class="sym" src="img/symb/2.jpg"  />
+                        <img class="sym" src="img/symb/2.jpg" />
                     </li>
                     <li data-target="#myCarousel2" data-slide-to="2">
-                        <img class="sym" src="img/symb/3.jpg"  />
+                        <img class="sym" src="img/symb/3.jpg" />
                     </li>
                     <li data-target="#myCarousel2" data-slide-to="3">
-                        <img class="sym" src="img/symb/4.jpg"  />
+                        <img class="sym" src="img/symb/4.jpg" />
                     </li>
                     <li data-target="#myCarousel2" data-slide-to="4">
-                        <img class="sym" src="img/symb/5.jpg"  />
+                        <img class="sym" src="img/symb/5.jpg" />
                     </li>
                 </ol>
 
@@ -370,10 +409,110 @@
 
 
         </div>
-        
+
+    </section>
+
+    <section class="check text-center" id="lala">
+        <div class="blk">
+            <div class="container">
+                <h2 class="h1" style="color:white; padding-top:1em;"> check this out! </h2>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 lead">
+                        <img class="rndimg" src="img/10.jpg" />
+                        <ul>
+                            <li>love to stay home</li>
+                            <li>will help you to study</li>
+                            <li>clean your house</li>
+                        </ul>
+                        <a href="#lala" class="btn btn-primary">Nice</a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 lead">
+                        <img class="rndimg" src="img/11.jpg" />
+                        <ul>
+                            <li>play with you</li>
+                            <li>i can sing too</li>
+                            <li>i don't pee</li>
+                        </ul>
+                        <a href="#lala" class="btn btn-success">Cool</a>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 lead">
+                        <img class="rndimg" src="img/12.jpg" />
+                        <ul>
+                            <li>i can dance</li>
+                            <li>i am funny</li>
+                            <li>funny again</li>
+                        </ul>
+                        <a href="#lala" class="btn btn-info">Wow</a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section id="bla" class="text-center lead" style="background:rgb(238, 238, 238); min-height:20em;">
+        <br /><br />
+
+        <h2 class="h1" style="color:#8e8e8e; margin-top:1em; "> We hope you visit us again <br /> We will open soon</h2>
+
+
     </section>
 
 
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10" /><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" /></svg>
+                <small class="d-block mb-3 text-muted">&copy; 2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                    <li><a class="text-muted" href="#">Another one</a></li>
+                    <li><a class="text-muted" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Business</a></li>
+                    <li><a class="text-muted" href="#">Education</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 
